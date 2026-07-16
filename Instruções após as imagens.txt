@@ -1,0 +1,3 @@
+Após confirmar que deu certo, é só fechar o Google e abrir denovo. Quando for utilizar o SOC ou qualquer site que apareça Captcha, a pessoa vai seguir o vídeo abaixo nomeado como Tutorial.mp4, que é o tutorial pra skippar o Captcha.
+
+é altamente recomendável que o processo seja pelo Edge e não pelo Chrome, devido à bugs e instabilidades

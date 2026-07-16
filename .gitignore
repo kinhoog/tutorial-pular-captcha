@@ -1,0 +1,25 @@
+# Sistema operacional
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editores
+.vscode/
+.idea/
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.log
+~$*
+cache/
+temp/
+
+# Backups e arquivos de trabalho
+backup/
+backups/
+assets/originals/
+*.bak
+
+# Dependências, caso existam
+node_modules/

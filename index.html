@@ -1,0 +1,859 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#072b4f">
+    <meta
+        name="description"
+        content="Tutorial interno para instalar e utilizar a extensão aprovada que auxilia na validação de CAPTCHA."
+    >
+    <title>Tutorial de pular o CAPTCHA</title>
+    <link
+        rel="icon"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII="
+    >
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+
+    <div class="reading-progress" aria-hidden="true">
+        <span class="reading-progress__bar" id="reading-progress"></span>
+    </div>
+
+    <header class="hero" id="inicio">
+        <div class="hero__heading">
+            <span class="eyebrow hero__eyebrow hero-animate" style="--hero-delay: 0ms;">
+                Tutorial interno
+            </span>
+
+            <h1 class="hero-animate" style="--hero-delay: 120ms;">
+                Tutorial de pular&nbsp;o <span>CAPTCHA</span>
+            </h1>
+        </div>
+
+        <div
+            class="hero__video-container hero-animate hero-animate--video"
+            style="--hero-delay: 240ms;"
+        >
+            <video
+                class="hero__video"
+                id="hero-video"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                aria-label="Animação do personagem pulando o CAPTCHA para acessar o SOC"
+            >
+                <source src="assets/videos/Hero.mp4" type="video/mp4">
+                Seu navegador não conseguiu reproduzir esta animação.
+            </video>
+        </div>
+
+        <div class="hero__content">
+            <p class="hero__subtitle hero-animate" style="--hero-delay: 360ms;">
+                Procedimento recomendado para reduzir falhas durante a validação de segurança
+                e evitar perda de tempo.
+            </p>
+
+            <div
+                class="edge-notice hero-animate"
+                style="--hero-delay: 480ms;"
+                role="note"
+                aria-label="Recomendação de navegador"
+            >
+                <div class="edge-notice__badge" aria-hidden="true">e</div>
+                <div>
+                    <strong>Utilize preferencialmente o Microsoft Edge.</strong>
+                    <p>
+                        O procedimento também pode funcionar no Google Chrome, porém esse
+                        navegador pode apresentar oscilações, bugs e instabilidades durante
+                        a validação.
+                    </p>
+                    <p class="edge-notice__scope">
+                        <span aria-hidden="true">✓</span>
+                        Utilize a extensão aprovada somente em sistemas e sites autorizados
+                        pela clínica.
+                    </p>
+                </div>
+            </div>
+
+            <a
+                href="#passo-a-passo"
+                class="button button--primary hero-animate"
+                style="--hero-delay: 600ms;"
+            >
+                Iniciar passo a passo
+                <span aria-hidden="true">↓</span>
+            </a>
+        </div>
+    </header>
+
+    <nav class="site-nav" aria-label="Navegação principal">
+        <div class="site-nav__inner">
+            <a class="site-nav__brand" href="#inicio" aria-label="Voltar ao início">
+                <span class="site-nav__brand-mark" aria-hidden="true">+</span>
+                <span>
+                    <strong>Tutorial interno</strong>
+                    <small>Validação de segurança</small>
+                </span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="primary-menu"
+                aria-label="Abrir menu de navegação"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="site-nav__links" id="primary-menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#passo-a-passo">Passo a passo</a></li>
+                <li><a href="#video-tutorial">Vídeo</a></li>
+                <li><a href="#duvidas">Dúvidas</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="conteudo-principal">
+        <section class="section intro" aria-labelledby="intro-title">
+            <div class="section-heading section-heading--split reveal reveal-up">
+                <div>
+                    <span class="eyebrow">Antes de começar</span>
+                    <h2 id="intro-title">Instalação simples, visual e segura</h2>
+                </div>
+                <div class="section-heading__copy">
+                    <p>
+                        Este material orienta a instalação e o uso da extensão aprovada para
+                        auxiliar na validação, reduzir falhas e facilitar o processo quando um
+                        CAPTCHA aparecer.
+                    </p>
+                    <p>
+                        Siga as sete etapas na ordem apresentada. Não é necessário alterar
+                        configurações avançadas do navegador.
+                    </p>
+                </div>
+            </div>
+
+            <div class="intro-grid" aria-label="Orientações rápidas">
+                <article class="info-card reveal reveal-up">
+                    <span class="info-card__index" aria-hidden="true">01</span>
+                    <h3>Prefira o Edge</h3>
+                    <p>É o navegador recomendado para evitar oscilações durante a validação.</p>
+                </article>
+                <article class="info-card reveal reveal-up">
+                    <span class="info-card__index" aria-hidden="true">02</span>
+                    <h3>Siga a sequência</h3>
+                    <p>Use as imagens e os marcadores para localizar cada opção com facilidade.</p>
+                </article>
+                <article class="info-card reveal reveal-up">
+                    <span class="info-card__index" aria-hidden="true">03</span>
+                    <h3>Uso autorizado</h3>
+                    <p>Realize o procedimento apenas nos sistemas e sites liberados pela clínica.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section steps-section" id="passo-a-passo" aria-labelledby="steps-title">
+            <div class="section-heading section-heading--center reveal reveal-up">
+                <span class="eyebrow">Passo a passo</span>
+                <h2 id="steps-title">Instale a extensão em sete etapas</h2>
+                <p>
+                    Acompanhe os marcadores em cada captura. Se precisar enxergar melhor,
+                    selecione “Ampliar imagem”.
+                </p>
+            </div>
+
+            <ol class="steps-list">
+                <li class="step-card reveal reveal-left">
+                    <div class="step-card__copy">
+                        <span class="step-number" aria-hidden="true">01</span>
+                        <p class="step-kicker">Etapa 1 de 7</p>
+                        <h3>Abra o menu de extensões</h3>
+                        <p>
+                            Clique no ícone de extensões localizado no canto superior direito
+                            do navegador.
+                        </p>
+                        <div class="step-tip">
+                            <span aria-hidden="true">↗</span>
+                            Procure o ícone em formato de peça de quebra-cabeça.
+                        </div>
+                    </div>
+
+                    <figure class="step-card__media">
+                        <div class="image-stage">
+                            <div
+                                class="tutorial-image"
+                                style="--marker-x: 52.5%; --marker-y: 12.8%;"
+                            >
+                                <img
+                                    src="assets/images/passo-01-extensoes.png"
+                                    alt="Barra superior do navegador com o ícone de extensões em formato de quebra-cabeça destacado"
+                                    loading="lazy"
+                                    decoding="async"
+                                >
+                                <span class="click-marker click-marker--below" aria-hidden="true">
+                                    <span class="click-marker__pulse"></span>
+                                    <span class="click-marker__cursor">↖</span>
+                                    <span class="click-marker__label">Clique aqui</span>
+                                </span>
+                            </div>
+                        </div>
+                        <figcaption>O ícone fica próximo à foto do perfil e ao menu do navegador.</figcaption>
+                        <button
+                            class="image-zoom-button"
+                            type="button"
+                            data-image-src="assets/images/passo-01-extensoes.png"
+                            data-image-alt="Barra superior do navegador com o ícone de extensões em formato de quebra-cabeça destacado"
+                            data-image-title="Etapa 1 — Abra o menu de extensões"
+                            data-image-caption="Clique no ícone em formato de quebra-cabeça."
+                            aria-label="Ampliar imagem da etapa 1"
+                        >
+                            <span aria-hidden="true">＋</span>
+                            Ampliar imagem
+                        </button>
+                    </figure>
+                </li>
+
+                <li class="step-card reveal reveal-right">
+                    <div class="step-card__copy">
+                        <span class="step-number" aria-hidden="true">02</span>
+                        <p class="step-kicker">Etapa 2 de 7</p>
+                        <h3>Acesse o gerenciamento de extensões</h3>
+                        <p>No menu aberto, clique em “Gerenciar extensões”.</p>
+                        <div class="step-tip">
+                            <span aria-hidden="true">↗</span>
+                            A opção aparece na parte inferior do menu.
+                        </div>
+                    </div>
+
+                    <figure class="step-card__media">
+                        <div class="image-stage">
+                            <div
+                                class="tutorial-image"
+                                style="--marker-x: 31%; --marker-y: 86%;"
+                            >
+                                <img
+                                    src="assets/images/passo-02-gerenciar-extensoes.png"
+                                    alt="Menu de extensões aberto com a opção Gerenciar extensões na parte inferior"
+                                    loading="lazy"
+                                    decoding="async"
+                                >
+                                <span class="click-marker click-marker--above" aria-hidden="true">
+                                    <span class="click-marker__pulse"></span>
+                                    <span class="click-marker__cursor">↖</span>
+                                    <span class="click-marker__label">Gerenciar</span>
+                                </span>
+                            </div>
+                        </div>
+                        <figcaption>Selecione a opção “Gerenciar extensões”.</figcaption>
+                        <button
+                            class="image-zoom-button"
+                            type="button"
+                            data-image-src="assets/images/passo-02-gerenciar-extensoes.png"
+                            data-image-alt="Menu de extensões aberto com a opção Gerenciar extensões na parte inferior"
+                            data-image-title="Etapa 2 — Acesse o gerenciamento de extensões"
+                            data-image-caption="A opção fica na parte inferior do menu de extensões."
+                            aria-label="Ampliar imagem da etapa 2"
+                        >
+                            <span aria-hidden="true">＋</span>
+                            Ampliar imagem
+                        </button>
+                    </figure>
+                </li>
+
+                <li class="step-card reveal reveal-left">
+                    <div class="step-card__copy">
+                        <span class="step-number" aria-hidden="true">03</span>
+                        <p class="step-kicker">Etapa 3 de 7</p>
+                        <h3>Abra a loja de extensões</h3>
+                        <p>
+                            Na página de extensões, clique em “Encontre mais extensões e temas
+                            na Chrome Web Store”.
+                        </p>
+                        <div class="step-tip">
+                            <span aria-hidden="true">↗</span>
+                            O atalho aparece na coluna esquerda da página.
+                        </div>
+                    </div>
+
+                    <figure class="step-card__media">
+                        <div class="image-stage">
+                            <div
+                                class="tutorial-image"
+                                style="--marker-x: 12.7%; --marker-y: 34.4%;"
+                            >
+                                <img
+                                    src="assets/images/passo-03-web-store.png"
+                                    alt="Página de gerenciamento de extensões com o link para a Chrome Web Store na lateral esquerda"
+                                    loading="lazy"
+                                    decoding="async"
+                                >
+                                <span class="click-marker click-marker--below" aria-hidden="true">
+                                    <span class="click-marker__pulse"></span>
+                                    <span class="click-marker__cursor">↖</span>
+                                    <span class="click-marker__label">Abra a loja</span>
+                                </span>
+                            </div>
+                        </div>
+                        <figcaption>Use o link da Chrome Web Store exibido na lateral.</figcaption>
+                        <button
+                            class="image-zoom-button"
+                            type="button"
+                            data-image-src="assets/images/passo-03-web-store.png"
+                            data-image-alt="Página de gerenciamento de extensões com o link para a Chrome Web Store na lateral esquerda"
+                            data-image-title="Etapa 3 — Abra a loja de extensões"
+                            data-image-caption="Clique no link da Chrome Web Store localizado à esquerda."
+                            aria-label="Ampliar imagem da etapa 3"
+                        >
+                            <span aria-hidden="true">＋</span>
+                            Ampliar imagem
+                        </button>
+                    </figure>
+                </li>
+
+                <li class="step-card reveal reveal-right">
+                    <div class="step-card__copy">
+                        <span class="step-number" aria-hidden="true">04</span>
+                        <p class="step-kicker">Etapa 4 de 7</p>
+                        <h3>Pesquise pela extensão</h3>
+                        <p>
+                            Pesquise por “captcha” e clique no primeiro resultado:
+                            “Buster: Captcha Solver for Humans”.
+                        </p>
+                        <div class="step-tip">
+                            <span aria-hidden="true">↗</span>
+                            Confirme o nome da extensão antes de continuar.
+                        </div>
+                    </div>
+
+                    <figure class="step-card__media">
+                        <div class="image-stage">
+                            <div
+                                class="tutorial-image"
+                                style="--marker-x: 50.6%; --marker-y: 21%;"
+                            >
+                                <img
+                                    src="assets/images/passo-04-pesquisar-captcha.png"
+                                    alt="Chrome Web Store com a busca captcha e Buster Captcha Solver for Humans como primeiro resultado"
+                                    loading="lazy"
+                                    decoding="async"
+                                >
+                                <span class="click-marker click-marker--below" aria-hidden="true">
+                                    <span class="click-marker__pulse"></span>
+                                    <span class="click-marker__cursor">↖</span>
+                                    <span class="click-marker__label">1º resultado</span>
+                                </span>
+                            </div>
+                        </div>
+                        <figcaption>Escolha “Buster: Captcha Solver for Humans”.</figcaption>
+                        <button
+                            class="image-zoom-button"
+                            type="button"
+                            data-image-src="assets/images/passo-04-pesquisar-captcha.png"
+                            data-image-alt="Chrome Web Store com a busca captcha e Buster Captcha Solver for Humans como primeiro resultado"
+                            data-image-title="Etapa 4 — Pesquise pela extensão"
+                            data-image-caption="Selecione o primeiro resultado da pesquisa por captcha."
+                            aria-label="Ampliar imagem da etapa 4"
+                        >
+                            <span aria-hidden="true">＋</span>
+                            Ampliar imagem
+                        </button>
+                    </figure>
+                </li>
+
+                <li class="step-card reveal reveal-left">
+                    <div class="step-card__copy">
+                        <span class="step-number" aria-hidden="true">05</span>
+                        <p class="step-kicker">Etapa 5 de 7</p>
+                        <h3>Inicie a instalação</h3>
+                        <p>Na página da extensão, clique no botão “Usar no Chrome”.</p>
+                        <div class="step-tip">
+                            <span aria-hidden="true">↗</span>
+                            No Edge, a loja mantém esse mesmo texto no botão.
+                        </div>
+                    </div>
+
+                    <figure class="step-card__media">
+                        <div class="image-stage">
+                            <div
+                                class="tutorial-image"
+                                style="--marker-x: 83.8%; --marker-y: 45.2%;"
+                            >
+                                <img
+                                    src="assets/images/passo-05-usar-no-chrome.png"
+                                    alt="Página da extensão Buster com o botão azul Usar no Chrome no lado direito"
+                                    loading="lazy"
+                                    decoding="async"
+                                >
+                                <span class="click-marker click-marker--left" aria-hidden="true">
+                                    <span class="click-marker__pulse"></span>
+                                    <span class="click-marker__cursor">↖</span>
+                                    <span class="click-marker__label">Usar no Chrome</span>
+                                </span>
+                            </div>
+                        </div>
+                        <figcaption>O botão azul inicia a instalação da extensão.</figcaption>
+                        <button
+                            class="image-zoom-button"
+                            type="button"
+                            data-image-src="assets/images/passo-05-usar-no-chrome.png"
+                            data-image-alt="Página da extensão Buster com o botão azul Usar no Chrome no lado direito"
+                            data-image-title="Etapa 5 — Inicie a instalação"
+                            data-image-caption="Clique no botão azul “Usar no Chrome”."
+                            aria-label="Ampliar imagem da etapa 5"
+                        >
+                            <span aria-hidden="true">＋</span>
+                            Ampliar imagem
+                        </button>
+                    </figure>
+                </li>
+
+                <li class="step-card reveal reveal-right">
+                    <div class="step-card__copy">
+                        <span class="step-number" aria-hidden="true">06</span>
+                        <p class="step-kicker">Etapa 6 de 7</p>
+                        <h3>Confirme a instalação</h3>
+                        <p>Na janela de confirmação, clique em “Adicionar extensão”.</p>
+                        <div class="step-tip">
+                            <span aria-hidden="true">↗</span>
+                            Revise o nome da extensão e confirme no botão azul.
+                        </div>
+                    </div>
+
+                    <figure class="step-card__media">
+                        <div class="image-stage">
+                            <div
+                                class="tutorial-image"
+                                style="--marker-x: 53.5%; --marker-y: 59.5%;"
+                            >
+                                <img
+                                    src="assets/images/passo-06-adicionar-extensao.png"
+                                    alt="Janela de confirmação de permissões com o botão Adicionar extensão"
+                                    loading="lazy"
+                                    decoding="async"
+                                >
+                                <span class="click-marker click-marker--above" aria-hidden="true">
+                                    <span class="click-marker__pulse"></span>
+                                    <span class="click-marker__cursor">↖</span>
+                                    <span class="click-marker__label">Adicionar</span>
+                                </span>
+                            </div>
+                        </div>
+                        <figcaption>Confirme selecionando “Adicionar extensão”.</figcaption>
+                        <button
+                            class="image-zoom-button"
+                            type="button"
+                            data-image-src="assets/images/passo-06-adicionar-extensao.png"
+                            data-image-alt="Janela de confirmação de permissões com o botão Adicionar extensão"
+                            data-image-title="Etapa 6 — Confirme a instalação"
+                            data-image-caption="Confirme a instalação no botão azul."
+                            aria-label="Ampliar imagem da etapa 6"
+                        >
+                            <span aria-hidden="true">＋</span>
+                            Ampliar imagem
+                        </button>
+                    </figure>
+                </li>
+
+                <li class="step-card reveal reveal-left">
+                    <div class="step-card__copy">
+                        <span class="step-number step-number--success" aria-hidden="true">07</span>
+                        <p class="step-kicker">Etapa 7 de 7</p>
+                        <h3>Instalação concluída</h3>
+                        <p>
+                            Quando essa mensagem aparecer, significa que a extensão foi
+                            instalada corretamente.
+                        </p>
+                        <div class="step-tip step-tip--success">
+                            <span aria-hidden="true">✓</span>
+                            Não é necessário clicar na mensagem de confirmação.
+                        </div>
+                    </div>
+
+                    <figure class="step-card__media">
+                        <div class="image-stage">
+                            <div
+                                class="tutorial-image"
+                                style="--marker-x: 35%; --marker-y: 42%;"
+                            >
+                                <img
+                                    src="assets/images/passo-07-instalacao-concluida.png"
+                                    alt="Mensagem informando que a extensão Buster Captcha Solver for Humans foi adicionada"
+                                    loading="lazy"
+                                    decoding="async"
+                                >
+                                <span class="click-marker click-marker--right click-marker--success" aria-hidden="true">
+                                    <span class="click-marker__pulse"></span>
+                                    <span class="click-marker__cursor">✓</span>
+                                    <span class="click-marker__label">Concluído</span>
+                                </span>
+                            </div>
+                        </div>
+                        <figcaption>A mensagem confirma que a instalação foi finalizada.</figcaption>
+                        <button
+                            class="image-zoom-button"
+                            type="button"
+                            data-image-src="assets/images/passo-07-instalacao-concluida.png"
+                            data-image-alt="Mensagem informando que a extensão Buster Captcha Solver for Humans foi adicionada"
+                            data-image-title="Etapa 7 — Instalação concluída"
+                            data-image-caption="A mensagem indica que a extensão foi instalada corretamente."
+                            aria-label="Ampliar imagem da etapa 7"
+                        >
+                            <span aria-hidden="true">＋</span>
+                            Ampliar imagem
+                        </button>
+                    </figure>
+                </li>
+            </ol>
+        </section>
+
+        <section class="section completion-section" aria-labelledby="completion-title">
+            <div class="completion-card reveal reveal-scale">
+                <div class="completion-card__icon" aria-hidden="true">✓</div>
+                <div class="completion-card__content">
+                    <span class="eyebrow eyebrow--light">Próximo passo</span>
+                    <h2 id="completion-title">Extensão instalada. E agora?</h2>
+                    <p>
+                        Depois que a instalação for confirmada, feche completamente o navegador
+                        e abra-o novamente. Isso garante que a extensão seja carregada corretamente.
+                    </p>
+                    <p>
+                        Ao acessar o SOC ou outro sistema autorizado que apresente CAPTCHA, siga
+                        o tutorial em vídeo abaixo para aprender a utilizar a extensão.
+                    </p>
+
+                    <div class="completion-card__notice" role="note">
+                        <strong>Microsoft Edge recomendado</strong>
+                        <span>
+                            Recomendamos realizar todo o processo pelo Microsoft Edge. Embora o
+                            Google Chrome também seja compatível, ele pode apresentar bugs,
+                            oscilações e instabilidades.
+                        </span>
+                    </div>
+
+                    <div class="button-group">
+                        <a class="button button--light" href="#video-tutorial">
+                            <span aria-hidden="true">▶</span>
+                            Assistir ao tutorial em vídeo
+                        </a>
+                        <a class="button button--ghost-light" href="#inicio">
+                            Voltar ao início
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section video-section" id="video-tutorial" aria-labelledby="video-title">
+            <div class="section-heading section-heading--center reveal reveal-up">
+                <span class="eyebrow">Tutorial completo em vídeo</span>
+                <h2 id="video-title">Como utilizar a extensão</h2>
+                <p>
+                    Assista ao procedimento completo para utilizar a extensão quando o CAPTCHA
+                    aparecer no SOC ou em outro sistema autorizado.
+                </p>
+            </div>
+
+            <div class="video-card reveal reveal-scale">
+                <div class="tutorial-video-container">
+                    <video
+                        class="tutorial-video"
+                        id="tutorial-video"
+                        controls
+                        playsinline
+                        preload="metadata"
+                        aria-describedby="video-description"
+                    >
+                        <source src="assets/videos/Tutorial.mp4" type="video/mp4">
+                        Seu navegador não conseguiu reproduzir este vídeo.
+                    </video>
+                </div>
+
+                <p class="sr-only" id="video-description">
+                    Vídeo com o procedimento de uso da extensão quando o CAPTCHA aparecer.
+                </p>
+
+                <div class="video-toolbar">
+                    <div class="video-toolbar__actions">
+                        <button
+                            class="button button--secondary button--compact"
+                            id="restart-video"
+                            type="button"
+                            aria-label="Reiniciar o tutorial em vídeo"
+                        >
+                            <span aria-hidden="true">↺</span>
+                            Reiniciar vídeo
+                        </button>
+                        <a class="button button--text button--compact" href="#passo-a-passo">
+                            <span aria-hidden="true">↑</span>
+                            Voltar ao passo a passo
+                        </a>
+                    </div>
+
+                    <p class="video-duration" id="video-duration" aria-live="polite">
+                        Duração: carregando…
+                    </p>
+                </div>
+
+                <p class="video-error" id="video-error" role="alert" hidden>
+                    Não foi possível carregar o vídeo. Confirme se o arquivo
+                    <strong>assets/videos/Tutorial.mp4</strong> está na pasta do site.
+                </p>
+
+                <div class="browser-reminder" role="note">
+                    <span class="browser-reminder__icon" aria-hidden="true">e</span>
+                    <p>
+                        <strong>Para maior estabilidade, assista e realize o procedimento no Microsoft Edge.</strong>
+                        O player também é compatível com o Google Chrome.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section faq-section" id="duvidas" aria-labelledby="faq-title">
+            <div class="section-heading section-heading--split reveal reveal-up">
+                <div>
+                    <span class="eyebrow">Ajuda rápida</span>
+                    <h2 id="faq-title">Dúvidas e problemas comuns</h2>
+                </div>
+                <div class="section-heading__copy">
+                    <p>
+                        Comece pelas verificações simples abaixo. Se o problema continuar,
+                        procure o suporte interno.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-list">
+                <article class="faq-item reveal reveal-up">
+                    <h3>
+                        <button
+                            class="faq-question"
+                            type="button"
+                            aria-expanded="true"
+                            aria-controls="faq-answer-1"
+                            id="faq-question-1"
+                        >
+                            <span>A extensão não apareceu depois da instalação.</span>
+                            <span class="faq-question__icon" aria-hidden="true"></span>
+                        </button>
+                    </h3>
+                    <div
+                        class="faq-answer"
+                        id="faq-answer-1"
+                        role="region"
+                        aria-labelledby="faq-question-1"
+                    >
+                        <div class="faq-answer__inner">
+                            <p>
+                                Feche completamente o navegador e abra-o novamente. Depois, acesse
+                                o menu de extensões e confirme se a extensão está ativa. Se ela ainda
+                                não aparecer, procure o suporte interno.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="faq-item reveal reveal-up">
+                    <h3>
+                        <button
+                            class="faq-question"
+                            type="button"
+                            aria-expanded="true"
+                            aria-controls="faq-answer-2"
+                            id="faq-question-2"
+                        >
+                            <span>O CAPTCHA continua apresentando erro.</span>
+                            <span class="faq-question__icon" aria-hidden="true"></span>
+                        </button>
+                    </h3>
+                    <div
+                        class="faq-answer"
+                        id="faq-answer-2"
+                        role="region"
+                        aria-labelledby="faq-question-2"
+                    >
+                        <div class="faq-answer__inner">
+                            <p>
+                                Atualize a página do sistema, confirme que a extensão está ativa e
+                                verifique se o navegador está atualizado. Utilize preferencialmente
+                                o Microsoft Edge. Se o erro continuar, procure o suporte interno.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="faq-item reveal reveal-up">
+                    <h3>
+                        <button
+                            class="faq-question"
+                            type="button"
+                            aria-expanded="true"
+                            aria-controls="faq-answer-3"
+                            id="faq-question-3"
+                        >
+                            <span>A extensão não está funcionando no Chrome.</span>
+                            <span class="faq-question__icon" aria-hidden="true"></span>
+                        </button>
+                    </h3>
+                    <div
+                        class="faq-answer"
+                        id="faq-answer-3"
+                        role="region"
+                        aria-labelledby="faq-question-3"
+                    >
+                        <div class="faq-answer__inner">
+                            <p>
+                                O Google Chrome pode apresentar oscilações e instabilidades. Feche e
+                                abra o navegador, confirme que ele está atualizado e tente novamente.
+                                Para maior estabilidade, realize o procedimento no Microsoft Edge.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="faq-item reveal reveal-up">
+                    <h3>
+                        <button
+                            class="faq-question"
+                            type="button"
+                            aria-expanded="true"
+                            aria-controls="faq-answer-4"
+                            id="faq-question-4"
+                        >
+                            <span>O ícone da extensão não aparece na barra.</span>
+                            <span class="faq-question__icon" aria-hidden="true"></span>
+                        </button>
+                    </h3>
+                    <div
+                        class="faq-answer"
+                        id="faq-answer-4"
+                        role="region"
+                        aria-labelledby="faq-question-4"
+                    >
+                        <div class="faq-answer__inner">
+                            <p>
+                                Abra o menu de extensões pelo ícone de quebra-cabeça e fixe a extensão
+                                na barra do navegador. Se ela não estiver na lista, confirme se está
+                                ativa no gerenciamento de extensões.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="faq-item reveal reveal-up">
+                    <h3>
+                        <button
+                            class="faq-question"
+                            type="button"
+                            aria-expanded="true"
+                            aria-controls="faq-answer-5"
+                            id="faq-question-5"
+                        >
+                            <span>O vídeo não está carregando.</span>
+                            <span class="faq-question__icon" aria-hidden="true"></span>
+                        </button>
+                    </h3>
+                    <div
+                        class="faq-answer"
+                        id="faq-answer-5"
+                        role="region"
+                        aria-labelledby="faq-question-5"
+                    >
+                        <div class="faq-answer__inner">
+                            <p>
+                                Atualize a página e tente novamente em uma versão atualizada do
+                                Microsoft Edge. Se o problema continuar, confirme com o suporte interno
+                                se a pasta do tutorial está completa.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section institutional-section" aria-labelledby="institutional-title">
+            <div class="institutional-notice reveal reveal-scale">
+                <div class="institutional-notice__icon" aria-hidden="true">!</div>
+                <div>
+                    <span class="eyebrow">Uso responsável</span>
+                    <h2 id="institutional-title">Aviso institucional</h2>
+                    <p>
+                        Este material é destinado exclusivamente ao uso interno. Utilize a extensão
+                        somente em sistemas e sites autorizados pela clínica. Não compartilhe
+                        credenciais, dados de pacientes ou informações internas. Em caso de dúvida,
+                        procure o responsável pelo sistema.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <div>
+                <strong>Tutorial interno da clínica</strong>
+                <p>Orientação objetiva para uma validação mais estável.</p>
+            </div>
+            <div class="site-footer__meta">
+                <a href="#inicio">Voltar ao início</a>
+                <span aria-hidden="true">•</span>
+                <span>Uso interno</span>
+                <span aria-hidden="true">•</span>
+                <span id="current-year"></span>
+            </div>
+        </div>
+    </footer>
+
+    <button
+        class="back-to-top"
+        id="back-to-top"
+        type="button"
+        aria-label="Voltar ao topo da página"
+        title="Voltar ao topo"
+    >
+        ↑
+    </button>
+
+    <div
+        class="image-modal"
+        id="image-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
+        aria-describedby="modal-caption"
+        hidden
+    >
+        <div class="image-modal__backdrop" data-modal-close></div>
+        <div class="image-modal__dialog">
+            <button
+                class="image-modal__close"
+                id="modal-close"
+                type="button"
+                aria-label="Fechar imagem ampliada"
+                data-modal-close
+            >
+                ×
+            </button>
+            <div class="image-modal__heading">
+                <p class="image-modal__eyebrow">Imagem ampliada</p>
+                <h2 id="modal-title"></h2>
+            </div>
+            <div class="image-modal__stage">
+                <img class="image-modal__image" id="modal-image" alt="">
+            </div>
+            <p class="image-modal__caption" id="modal-caption"></p>
+        </div>
+    </div>
+</body>
+</html>
