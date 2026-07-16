@@ -38,6 +38,7 @@ Captcha tutorial/
 ├── Instruções após as imagens.txt
 └── assets/
     ├── images/
+    │   ├── favicon.png
     │   ├── Logo.png
     │   ├── logo-site.png
     │   ├── passo-01-extensoes.png
