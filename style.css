@@ -480,41 +480,21 @@ a {
     margin: 0 auto;
 }
 
-.site-nav__brand {
+.site-logo {
     display: inline-flex;
+    min-width: 0;
     align-items: center;
-    gap: 11px;
-    color: var(--color-navy-950);
+    flex: 0 1 auto;
+    border-radius: 10px;
     text-decoration: none;
 }
 
-.site-nav__brand-mark {
-    display: grid;
-    place-items: center;
-    width: 38px;
-    height: 38px;
-    color: #fff;
-    background: linear-gradient(145deg, var(--color-blue-600), var(--color-turquoise-500));
-    border-radius: 12px;
-    font-size: 1.35rem;
-    font-weight: 500;
-}
-
-.site-nav__brand strong,
-.site-nav__brand small {
+.site-logo img {
     display: block;
-}
-
-.site-nav__brand strong {
-    font-size: 0.92rem;
-    line-height: 1.2;
-}
-
-.site-nav__brand small {
-    margin-top: 3px;
-    color: var(--color-muted);
-    font-size: 0.69rem;
-    line-height: 1.1;
+    width: auto;
+    height: 52px;
+    max-width: min(260px, 38vw);
+    object-fit: contain;
 }
 
 .site-nav__links {
@@ -1601,6 +1581,30 @@ html:not(.js) .faq-question__icon {
     padding: 36px 0;
 }
 
+.site-footer__brand {
+    display: flex;
+    min-width: 0;
+    align-items: center;
+    gap: 18px;
+}
+
+.site-footer__logo {
+    display: inline-flex;
+    flex: 0 0 auto;
+    padding: 4px 7px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 11px;
+}
+
+.site-footer__logo img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 180px;
+    object-fit: contain;
+}
+
 .site-footer strong {
     color: #fff;
 }
@@ -2001,8 +2005,9 @@ html:not(.js) .faq-question__icon {
         width: calc(100% - 24px);
     }
 
-    .site-nav__brand small {
-        display: none;
+    .site-logo img {
+        height: 36px;
+        max-width: min(190px, 58vw);
     }
 
     .section {
@@ -2154,6 +2159,12 @@ html:not(.js) .faq-question__icon {
         padding: 42px 0;
     }
 
+    .site-footer__brand {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
     .site-footer__meta {
         justify-content: flex-start;
     }
@@ -2183,13 +2194,9 @@ html:not(.js) .faq-question__icon {
 }
 
 @media (max-width: 390px) {
-    .site-nav__brand-mark {
-        width: 35px;
-        height: 35px;
-    }
-
-    .site-nav__brand strong {
-        font-size: 0.82rem;
+    .site-logo img {
+        height: 34px;
+        max-width: min(170px, 54vw);
     }
 
     .step-card__copy {

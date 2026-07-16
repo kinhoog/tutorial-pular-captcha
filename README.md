@@ -25,6 +25,7 @@ Captcha tutorial/
 ├── README.md
 ├── .gitignore
 ├── .nojekyll
+├── Logo.png
 ├── Hero.mp4
 ├── Tutorial.mp4
 ├── Imagem 1 - Clicar no ícone das extensões.png
@@ -37,6 +38,8 @@ Captcha tutorial/
 ├── Instruções após as imagens.txt
 └── assets/
     ├── images/
+    │   ├── Logo.png
+    │   ├── logo-site.png
     │   ├── passo-01-extensoes.png
     │   ├── passo-02-gerenciar-extensoes.png
     │   ├── passo-03-web-store.png
